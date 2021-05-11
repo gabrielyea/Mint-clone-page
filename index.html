@@ -19,21 +19,57 @@
             </div>
             <div>
                 <button class="btn" type="submit" name="learn" value="myimage">
-                    <div class="lock-icon"></div>
+                    <span class="lock-icon"></span>
                     Sign In
                 </button>
             </div>
         </div>
     </div>
-    <div class="form-main">
-        <div class="form-logos">
+    <div class="main-container">
+        <div class="logos-container">
             <div class="main-logo">
-                <span class="intuit"></span>
+                <div class="intuit"></div>
             </div>
             <div class="other-logo">
                 <span class="mint"></span>
                 <span class="quickbooks"></span>
                 <span class="turbotax"></span>
+            </div>
+        </div>
+        <div class="form-content">
+            <header class="header-container">
+                <span id="text1">Create an Intuit account</span>
+                <span id="text2">
+                    <div>One account for everything Intuit, including Mint.</div>
+                </span>
+                <a href="">Learn more</a>
+            </header>
+            <form>
+                <div class="input-field">
+                    <label for="email"> 
+                        Email address
+                        <input id="email" type="email" name="email" required>
+                    </label>
+                </div>
+                <div class="input-field">
+                    <label for="phone"> 
+                        Phone
+                        <input id="phone" type="phone" name="phone">
+                    </label>
+                    <p>Standard call, messaging or data rates may apply.</p>
+                </div>
+                <div class="input-field">
+                    <label for="password"> 
+                        Password
+                        <input id="password" type="password" name="password" required>
+                    </label>
+                </div>
+                <div>
+                    <button class="btn"><span class="lock-icon"></span>Create account</button>
+                </div>
+            </form>
+            <div class="disclaimer">
+                <span>By selecting Create Account, you agree to our Terms and have read and acknowledge our Global Privacy Statement.</span>
             </div>
         </div>
     </div>
