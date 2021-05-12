@@ -12,12 +12,13 @@ body {
 .sign-up-grid {
     display: grid;
     grid-template-columns: 200px 1fr;
+    gap: 5px;
 }
 
 .sign-up-text {
     font-size: 12px;
     text-align: right;
-    line-height: 0.3;
+    line-height: 0.5;
 }
 
 .btn {
@@ -174,12 +175,64 @@ p{
     font-size: 10px;
 }
 
-.disclaimer{
+footer{
     padding: 50px;
-}
-
-.disclaimer span{
     text-align: center;
     font-style: italic;
+    font-size: 10px;
+}
+
+.captcha{
+    font-size: 10px;
+    margin: 10px;
+}
+
+.legal-stuff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: #505050;
     font-size: 12px;
+    line-height: 1.5;
+}
+
+.legal-stuff a{
+    color: #505050;   
+}
+
+.copyrigth{
+    text-align: center;
+}
+
+#warning{
+    display: none;
+}
+
+.messages{
+    padding-left: 10px;
+}
+
+.invalid{
+    color:red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -5px;
+    content: "✖";
+}
+
+.valid{
+    color: green;
+}
+
+.valid:before{
+    position: relative;
+    left: -5px;
+    content: "✔";
+}
+
+#pass-conf-warning{
+    display: none;
 }

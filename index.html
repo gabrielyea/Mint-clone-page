@@ -7,7 +7,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+
 </head>
 
 <body>
@@ -46,33 +46,67 @@
             </header>
             <form>
                 <div class="input-field">
-                    <label for="email"> 
+                    <label for="email">
                         Email address
                         <input id="email" type="email" name="email" required>
                     </label>
                 </div>
                 <div class="input-field">
-                    <label for="phone"> 
+                    <label for="phone">
                         Phone
                         <input id="phone" type="phone" name="phone">
                     </label>
                     <p>Standard call, messaging or data rates may apply.</p>
                 </div>
                 <div class="input-field">
-                    <label for="password"> 
+                    <label for="pass">
                         Password
-                        <input id="password" type="password" name="password" required>
+                        <input type="password" id="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            required>
                     </label>
+                </div>
+                <div id="warning" class="warning-password">
+                    <div class="input-field">
+                        <div class="messages">
+                            <p class="invalid" id="chars">Use 8 or more characters </p>
+                            <p class="invalid" id="lowUp">Use upper and lower case letters (e.g. Aa) </p>
+                            <p class="invalid" id="num">Use a number (e.g. 1234)</p>
+                            <p class="invalid" id="symb">Use a symbol (e.g. !@#$) </p>
+                        </div>
+                        <label for="pass-conf">
+                            Confirm password
+                            <input type="password" id="pass-conf" name="confirm" required>
+                        </label>
+                        <div class="messages">
+                        <p id="pass-conf-warning">Please confirm the password </p>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <button class="btn"><span class="lock-icon"></span>Create account</button>
                 </div>
             </form>
-            <div class="disclaimer">
-                <span>By selecting Create Account, you agree to our Terms and have read and acknowledge our Global Privacy Statement.</span>
-            </div>
+            <footer>
+                By selecting Create Account, you agree to our<br> <a href="">Terms</a> and have read and acknowledge our
+                Global <a href="">Privacy <br>Statement</a>.
+            </footer>
+            <div class="captcha">Invisible reCAPTCHA by Google <a href="">Privacy Policy</a> and <a href="">Terms of
+                    Use</a>.</div>
+        </div>
+    </div>
+    <div class="legal-stuff">
+        <div class="legal-links">
+            <a href="">Legal</a>
+            <a href="">Privacy</a>
+            <a href="">Security</a>
+        </div>
+        <div class="copyrigth">
+            © 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are
+            registered trademarks of Intuit Inc.
+            Terms and conditions, features, support, pricing, and service options subject to change without notice.
         </div>
     </div>
 </body>
+<script src='app.js'></script>
 
 </html>
